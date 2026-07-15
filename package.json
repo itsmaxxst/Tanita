@@ -1,0 +1,36 @@
+{
+  "name": "tanitadc13cjs",
+  "version": "1.0.0",
+  "description": "Tanita plugin...",
+  "main": "main.js",
+  "bin": "main.js",
+  "scripts": {
+    "build": "pkg . --targets node24-win-x64 --compress Brotli --output dist/tanitadc13cjs.exe",
+    "start": "node main.js"
+  },
+  "dependencies": {
+    "serialport": "^13.0.0",
+    "zeromq": "^6.5.0"
+  },
+  "devDependencies": {
+    "@yao-pkg/pkg": "^6.19.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "pkg": {
+    "script": [
+      "node_modules/@zeromq/zeromq/**/*.js"
+    ],
+    "assets": [
+      "node_modules/@serialport/bindings-cpp/prebuilds/win32-x64/@serialport+bindings-cpp.node",
+      "node_modules/zeromq/build/**"
+    ],
+    "targets": [
+      "node24-win-x64"
+    ],
+    "outputPath": "dist",
+    "compress": "Brotli",
+    "options": []
+  }
+}
