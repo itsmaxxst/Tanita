@@ -1,0 +1,24 @@
+{
+  "socket": {
+    "zeromqIp": "127.0.0.1",
+    "zeromqPort": "9996"
+  },
+  "manufacturer": "TANITA DC13C",
+  "port": {
+    "path": "COM11",
+    "baudRate": 9600,
+    "vid": "0403",
+    "pid": "6001"
+  },
+
+  "timeoutStepOn": 20000,
+  "timeout": 120000,
+
+  "log": {
+    "console": true,
+    "logDir": "C:\\device-manager-lifestyle\\log",
+    "logName": "tanitadc13cjs",
+    "level": "DEBUG",
+    "_level": "{ DEBUG: 0, INFO: 1, WARN: 2, ERROR: 3 }"
+  }
+}
