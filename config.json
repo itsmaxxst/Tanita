@@ -16,7 +16,7 @@
 
   "log": {
     "console": true,
-    "logDir": "C:\\device-manager-lifestyle\\log",
+    "logDir": "C:\\log",
     "logName": "tanitadc13cjs",
     "level": "DEBUG",
     "_level": "{ DEBUG: 0, INFO: 1, WARN: 2, ERROR: 3 }"
