@@ -73,3 +73,31 @@ You are free to implement this test project however you prefer, depending on you
 
 ✔ Ensure bidirectional communication with the plugin (front-end emulation)
 
+### Payload structure
+{
+      "command":{
+        "inputData": { 
+          "cmd": "measureStart", 
+          "bodyType": "normal",
+          "shoes": "sneakers",
+          "age": 22,
+          "height": 173,
+          "genre": "male",
+          "clothing": "heavyClothing" 
+        },
+        "outputData": {}
+        }
+}
+
+the other messages should have the following structure: 
+{
+      "command":{
+        "inputData": { 
+          "cmd": "measureBW"
+        },
+        "outputData": {}
+        }
+}
+
+and so on.
+
