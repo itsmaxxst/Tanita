@@ -53,6 +53,8 @@ The test app must send the following messages:
 - `measureBI`
 - `measureStop`
 
+You can see the correct messages flow in the image.png in this repository
+
 ### Communication Flow
 
 - The test project communicates with the plugin
